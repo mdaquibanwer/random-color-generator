@@ -1,0 +1,75 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #343434;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+h2{
+    position: fixed;
+    top: 20px;
+    color: #fff;
+}
+
+.container{
+    max-width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.square{
+    background-color: #1d1d1d;
+    box-shadow: 0 0 2px #000;
+    height: 16px;
+    width: 16px;
+    margin: 2px;
+    transition: 2s ease;
+}
+.square:hover{
+    transition: 0s;
+}
+
+.copy-color{
+    width: 400px;
+    background-color: #1d1d1d;
+    height: 40px;
+    display: flex;
+    position: fixed;
+    bottom: 40px;
+    margin-top: 10px;
+    
+}
+.copy-color .text{
+    margin: auto;
+    color: #fff;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    position: relative;
+}
+.copy-color .btn{
+    text-align: center;
+    border: none;
+    background-color: #343434;
+    padding: 10px;
+    position: absolute;
+    right: 5px;
+    top: 1px;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+.copy-color .btn:hover{
+    background-color: #121212;
+    transition: all 0.5s ease;
+}
